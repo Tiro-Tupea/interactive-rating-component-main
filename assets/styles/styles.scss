@@ -1,0 +1,137 @@
+@import './variables';
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1440px;
+    color: $neutral;
+    font-size: 15px;
+    font-family: overpass, sans-serif;
+    background: $neutralDarkBlue ;
+}
+
+p {
+    color: $neutralLightGrey;
+}
+
+.star {
+    width: 50px;
+    height: 50px; 
+    border-radius: 50%;
+    border-style: none;
+    background-color: $neutralMidGrey;
+
+    img {
+        position: relative;
+            left: 17px;
+            top : 16px;
+    }
+}
+
+.main-cart {
+    position: relative;
+    top: 15vh;
+    width: 400px;
+    height: 375px;
+    margin: 0 auto;
+    padding: 20px 35px;
+    border-radius: 20px;
+    background-color: $neutralBlue;
+}
+
+
+.rate-choice {
+    width: 100%;
+    height: 20%;
+    margin: 20px auto;
+
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        li {
+            
+            padding: 10px;
+            position: relative;
+                right: 52px;
+            button {
+
+                width: 50px;
+                height: 50px; 
+                border-radius: 50%;
+                border-style: none;
+                background-color: $neutralMidGrey;
+                color: $neutralLightGrey;
+                
+                &:hover{
+                    cursor: pointer;
+                    color: $neutral;
+                    background-color: $primaryColor;
+                }
+
+                &:active{
+                    color: $neutral;
+                    background-color: $neutralLightGrey;   
+                }
+    
+            }
+
+            
+        }
+    }
+
+}
+
+.button-submit {
+
+    input[type=submit] {
+        width: 100%;
+        height: 40px;
+        color: $neutral;
+        letter-spacing: 3px;
+        border-style: none;
+        border-radius: 20px;
+        background-color: $primaryColor;
+
+        &:hover {
+            cursor: pointer;
+        }
+        &:active {
+            color: $neutral;
+            background-color: $neutralLightGrey;   
+        }
+    }
+
+   
+}
+
+
+.thk-u-cart {
+    display: none;
+    text-align: center;
+    .score-rate {
+        width: 60%;
+        height: 30px;
+        margin: 0 auto;
+        color: $primaryColor;
+        border-radius: 20px;
+        background-color: $neutralDarkBlue;
+        
+       .score {
+            position: relative;
+            top: 6px;
+        }
+
+    }
+}
+
+
+.attribution {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 10rem;
+}
